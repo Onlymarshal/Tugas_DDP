@@ -1,0 +1,32 @@
+kendaraan=["Beat","motor","Honda","110cc"]
+kendaraan.append("hijau")
+kendaraan.append("9_juta")
+kendaraan.insert(2,"roda dua")
+kendaraan.remove("motor")
+print(kendaraan)
+
+pilihan=input(""" Hitunglah luas dari bangun ruang dibawah ini
+====================================
+1. menghitung persegi
+2. menghitubg lingkaran
+3. menghitung segitiga
+====================================
+silahkan pillih?
+""")
+match pilihan:
+    case "1":
+        print("menghitung luas persegi")
+        sisi = int(input("masukkan sisi"))
+        luasP = int(sisi*sisi)
+        print("luas persegi adalah",luasP)
+    case "2":
+        print("menghitung luas lingkaran")
+        jari = float(input("masukkan jari-jari"))
+        luasL = float(3.14* jari-jari) 
+        print("luas lingkaran adalah", luasL) 
+    case "3" :
+        print("menghitung luas segitiga") 
+        alas = int(input("masukan alas "))
+        tinggi = int(input("masukan tinggi")) 
+        luasS = int (alas* tinggi/2)
+        print("luas segitiga adalah",luasS)
